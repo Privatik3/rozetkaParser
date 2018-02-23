@@ -19,6 +19,7 @@ public class App {
             System.out.println("\tType: " + proc.getType());
             System.out.println("\tTitle: " + proc.getTitle());
             System.out.println("\tDescription: " + proc.getDescription());
+            System.out.println("\tPrice: " + proc.getPrice());
 
             System.out.println("\tPrint images list:");
             for (String img : proc.getImages()) {

@@ -1,11 +1,20 @@
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import products.Category;
 import products.Comment;
 import products.Processor;
 import products.Product;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 public class parserHelper {
 
@@ -26,7 +35,7 @@ public class parserHelper {
 
         Processor processor = new Processor(
                 Category.PROCESSOR, "Название товара","здесь будет описание товара",
-                images, attributes, comments);
+                5500, images, attributes, comments);
 
         result.add(processor);
         return result;
