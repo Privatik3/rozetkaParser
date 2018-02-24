@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
 
         // Подставляй любую из доступных категорий что бы получить все категории этого товара
-        ArrayList<Product> processors = parserHelper.getProduct(Category.PROCESSOR);
+        ArrayList<Product> processors = parserHelper.getProduct(Category.VIDEO_CARD);
 //        ArrayList<Product> motherBoards = parserHelper.getProduct(Category.MOTHERBOARD);
 
         // Для примера, вывод всей информации о процессорах
