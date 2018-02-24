@@ -3,7 +3,9 @@ import products.Comment;
 import products.Product;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class App {
 
@@ -14,7 +16,7 @@ public class App {
 //        ArrayList<Product> motherBoards = parserHelper.getProduct(Category.MOTHERBOARD);
 
         // Для примера, вывод всей информации о процессорах
-        System.out.println("Print processors list:");
+        System.out.println("Print VIDEO_CARD list:");
         for (Product proc : processors) {
             System.out.println("\tType: " + proc.getType());
             System.out.println("\tTitle: " + proc.getTitle());
@@ -41,6 +43,5 @@ public class App {
             }
             System.out.println("\t=======================================");
         }
-
     }
 }
