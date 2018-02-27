@@ -24,11 +24,11 @@ public class Comment {
         return rating;
     }
 
-    public Date getDate() {
-        return date;
+    public String getDate() {
+        return 1900 + date.getYear() + "-" + date.getMonth() + "-" + date.getDay();
     }
 
     public String getMessage() {
-        return message;
+        return message.replaceAll("\"", "”");
     }
 }

@@ -41,7 +41,7 @@ public abstract class Product {
     }
 
     public String getDescription() {
-        return description;
+        return description.replaceAll("\"", "”");
     }
 
     public HashMap<String, String> getAttributes() {
